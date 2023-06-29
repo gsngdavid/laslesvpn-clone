@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* orange: #F53838 */
+
+
+@layer components {
+    .btn {
+        @apply text-xs font-semibold 
+         border rounded-2xl inline-block
+    }
+
+    .btn-primary {
+        @apply text-orange-500 border-orange-500 hover:text-white hover:shadow-lg hover:shadow-red-200 hover:bg-red-500
+    }
+
+    .testimony {
+        @apply p-4 border-2 rounded-lg hover:border-red-400 hover:shadow-2xl hover:shadow-gray-200 hover:cursor-pointer
+    }
+    .testimony.active{
+        @apply border-red-400 shadow-2xl shadow-gray-200
+    }
+
+    .footer-link {
+        @apply text-gray-600 text-xs font-medium mb-1 hover:text-red-600
+    }
+}
+
+.cust-orange {
+    color: #F53838;
+}
+.bg-cust-orange {
+    background-color: #F53838;
+}
